@@ -33,7 +33,7 @@ Alat :
 Ikuti skema koneksi pada gambar [assembling.png](https://github.com/FOSTI-UMS/esp32-doorlock/blob/main/assets/assembling/assembling.png). Pastikan semua komponen telah terhubung dengan benar.
 
 ### Langkah 4: Menghubungkan ESP32 ke Komputer
-Sambungkan ESP32 ke komputer menggunakan kabel USB. Lihat gambar [assembling1.jpeg](https://github.com/FOSTI-UMS/esp32-doorlock/blob/main/assets/assembling/assembling1.jpeg).
+Sambungkan ESP32 ke komputer menggunakan kabel USB. Lihat gambar [assembling1.png](https://github.com/FOSTI-UMS/esp32-doorlock/blob/main/assets/assembling/assembling1.jpeg).
 
 ### Langkah 5: Membuka Arduino IDE
 Buka Arduino IDE di komputer Anda.
