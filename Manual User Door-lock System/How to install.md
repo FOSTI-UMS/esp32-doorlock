@@ -30,10 +30,10 @@ Alat :
 1. Instal Arduino IDE pada perangkat komputer Anda.
 
 ### Langkah 3: Menghubungkan Perangkat
-Ikuti skema koneksi pada gambar [](https://github.com/FOSTI-UMS/esp32-doorlock/blob/main/assets/assembling/assembling.png). Pastikan semua komponen telah terhubung dengan benar.
+Ikuti skema koneksi pada gambar ![](https://github.com/FOSTI-UMS/esp32-doorlock/blob/main/assets/assembling/assembling.png). Pastikan semua komponen telah terhubung dengan benar.
 
 ### Langkah 4: Menghubungkan ESP32 ke Komputer
-Sambungkan ESP32 ke komputer menggunakan kabel USB. Lihat gambar [](https://github.com/FOSTI-UMS/esp32-doorlock/blob/main/assets/assembling/assembling1.jpeg).
+Sambungkan ESP32 ke komputer menggunakan kabel USB. Lihat gambar ![](https://github.com/FOSTI-UMS/esp32-doorlock/blob/main/assets/assembling/assembling1.jpeg).
 
 ### Langkah 5: Membuka Arduino IDE
 Buka Arduino IDE di komputer Anda.
@@ -54,10 +54,10 @@ Instal modul-modul berikut pada Arduino IDE:
 Salin kode dari file [src/main.ino](https://github.com/FOSTI-UMS/esp32-doorlock/blob/main/src/main.ino) dan pastekan ke dalam Arduino IDE.
 
 ### Langkah 8: Memilih Board dan Port
-Pilih board dan port yang sesuai dengan ESP32 Anda pada Arduino IDE. Lihat gambar [](https://github.com/FOSTI-UMS/esp32-doorlock/blob/main/assets/install/port.png).
+Pilih board dan port yang sesuai dengan ESP32 Anda pada Arduino IDE. Lihat gambar ![](https://github.com/FOSTI-UMS/esp32-doorlock/blob/main/assets/install/port.png).
 
 ### Langkah 9: Kompilasi dan Unggah
-Klik tombol kompilasi (ikon ceklis) untuk memastikan tidak ada kesalahan dalam kode. Setelah itu, klik tombol unggah (ikon panah menghadap ke kanan) untuk mengunggah program ke ESP32. Tunggu hingga proses kompilasi selesai. Lihat gambar [](https://github.com/FOSTI-UMS/esp32-doorlock/blob/main/assets/install/compile.png), [](https://github.com/FOSTI-UMS/esp32-doorlock/blob/main/assets/install/waiting.png).
+Klik tombol kompilasi (ikon ceklis) untuk memastikan tidak ada kesalahan dalam kode. Setelah itu, klik tombol unggah (ikon panah menghadap ke kanan) untuk mengunggah program ke ESP32. Tunggu hingga proses kompilasi selesai. Lihat gambar ![](https://github.com/FOSTI-UMS/esp32-doorlock/blob/main/assets/install/compile.png), ![](https://github.com/FOSTI-UMS/esp32-doorlock/blob/main/assets/install/waiting.png).
 
 ### Catatan Penting:
 Pastikan bahwa ESP32 telah terhubung dengan komputer melalui kabel USB sebelum mengompilasi atau mengunggah program.
