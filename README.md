@@ -39,8 +39,8 @@ Dalam versi terbaru ini, kami telah melakukan beberapa pembaruan untuk meningkat
    - Perkabelan sistem telah diperbarui untuk meningkatkan stabilitas dan kinerja keseluruhan.
 
 # Daftar Isi
-- <a href="https://github.com/FOSTI-UMS/esp32-doorlock/blob/main/Manual%20User%20Door-lock%20System/How%20to%20install.md">Cara Memasang Sistem Kunci Pintu</a>
-- <a href="https://github.com/FOSTI-UMS/esp32-doorlock/blob/main/Manual%20User%20Door-lock%20System/How%20to%20use.md">Cara Menggunakan Sistem Kunci Pintu</a>
+- <a href="[https://github.com/FOSTI-UMS/esp32-doorlock/blob/main/Manual%20User%20Door-lock%20System/How%20to%20install.md](https://github.com/FOSTI-UMS/esp32-doorlock/blob/main/Manual%20User%20Door-lock%20System/How%20to%20install.md)">Cara Memasang Sistem Kunci Pintu</a>
+- <a href="[https://github.com/FOSTI-UMS/esp32-doorlock/blob/main/Manual%20User%20Door-lock%20System/How%20to%20use.md](https://github.com/FOSTI-UMS/esp32-doorlock/blob/main/Manual%20User%20Door-lock%20System/How%20to%20use.md)">Cara Menggunakan Sistem Kunci Pintu</a>
 
 # Tim Kami
 * Ahmat Zainul Muttaqin
