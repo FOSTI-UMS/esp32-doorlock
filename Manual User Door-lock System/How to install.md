@@ -82,7 +82,9 @@ Sebelum memulai konfigurasi, pastikan library TFT_eSPI sudah terinstall pada Ard
 6. Buka file User_Setup_Select.h pada direktori library TFT_eSPI.
 7. Konfigurasi bagian kode seperti berikut ini:
    ```cpp
-   #include <User_Setups/User_Setup_ST7789.h>, selain kode tersebut, biarkan tetap konfigurasi default.
+   #include <User_Setups/User_Setup_ST7789.h>
+8. Simpan konfigurasi tersebut.
+9. Selain kode tersebut, biarkan tetap konfigurasi default.
    
 ### Langkah 8: Salin Kode
 Salin kode dari file [src/main.ino](https://github.com/FOSTI-UMS/esp32-doorlock/blob/main/src/main.ino) dan pastekan ke dalam Arduino IDE.
