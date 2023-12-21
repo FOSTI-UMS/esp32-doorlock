@@ -10,7 +10,7 @@ Bahan :
 1. Modul NodeMCU ESP32
 2. PCB Board
 3. Modul Fingerprint
-4. LCD TFT ST7889
+4. LCD TFT ST7789
 5. Antenna
 6. Battery 12V
 7. Battery Management System (BMS)
@@ -57,26 +57,27 @@ Sebelum memulai konfigurasi, pastikan library TFT_eSPI sudah terinstall pada Ard
 2. Pilih tab "Sketch" (di bagian atas), kemudian pilih "Include Library" -> "TFT_eSPI" -> "User Setup file".
 3. Buka file User_Setup_ST7789.h pada direktori library TFT_eSPI.
 4. Konfigurasi beberapa bagian kode seperti berikut ini:
-   `#define ST7789_2_DRIVER`
-   `#define TFT_SDA_READ`
-   `#define TFT_WIDTH  240` (Disesuaikan dengan lebar layar LCD)
-   `#define TFT_HEIGHT 320` (Disesuaikan dengan tinggi layar LCD)
-   `#define TFT_MOSI 23`
-   `#define TFT_SCLK 18`
-   `#define TFT_CS 15`
-   `#define TFT_DC 2`
-   `#define TFT_RST 4`
-   `#define LOAD_GLCD`
-   `#define LOAD_FONT2`
-   `#define LOAD_FONT4`
-   `#define LOAD_FONT6`
-   `#define LOAD_FONT7`
-   `#define LOAD_FONT8`
-   `#define LOAD_GFXFF`
-   `#define SMOOTH_FONT`
-   `#define SPI_FREQUENCY  27000000`
-   `#define SPI_READ_FREQUENCY  20000000`
-   `#define SPI_TOUCH_FREQUENCY  2500000`
+   ```cpp
+   #define ST7789_2_DRIVER
+   #define TFT_SDA_READ
+   #define TFT_WIDTH  240  // Disesuaikan dengan lebar layar LCD
+   #define TFT_HEIGHT 320  // Disesuaikan dengan tinggi layar LCD
+   #define TFT_MOSI 23
+   #define TFT_SCLK 18
+   #define TFT_CS 15
+   #define TFT_DC 2
+   #define TFT_RST 4
+   #define LOAD_GLCD
+   #define LOAD_FONT2
+   #define LOAD_FONT4
+   #define LOAD_FONT6
+   #define LOAD_FONT7
+   #define LOAD_FONT8
+   #define LOAD_GFXFF
+   #define SMOOTH_FONT
+   #define SPI_FREQUENCY  27000000
+   #define SPI_READ_FREQUENCY  20000000
+   #define SPI_TOUCH_FREQUENCY  2500000
 5. Simpan konfigurasi tersebut.
 6. Buka file User_Setup_Select.h pada direktori library TFT_eSPI.
 7. Konfigurasi bagian kode seperti berikut ini:
