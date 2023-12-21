@@ -10,7 +10,7 @@ Bahan :
 1. Modul NodeMCU ESP32
 2. PCB Board
 3. Modul Fingerprint
-4. LCD TFT 7889
+4. LCD TFT ST7889
 5. Antenna
 6. Battery 12V
 7. Battery Management System (BMS)
@@ -38,8 +38,8 @@ Sambungkan ESP32 ke komputer menggunakan kabel USB. Lihat gambar ![](https://git
 ### Langkah 5: Membuka Arduino IDE
 Buka Arduino IDE di komputer Anda.
 
-### Langkah 6: Menginstall Modul-modul
-Instal modul-modul berikut pada Arduino IDE:
+### Langkah 6: Menginstall Library
+Instal library berikut pada Arduino IDE:
 1. Arduino
 2. WiFi
 3. SoftwareSerial
@@ -50,13 +50,45 @@ Instal modul-modul berikut pada Arduino IDE:
 8. ArduinoJson
 9. TFT_eSPI
 
-### Langkah 7: Salin Kode
+### Langkah 7: Konfigurasi library TFT_eSPI
+Sebelum memulai konfigurasi, pastikan library TFT_eSPI sudah terinstall pada Arduino IDE. Setelah itu, ikuti langkah-langkah konfigurasi berikut:
+
+1. Buka Arduino IDE.
+2. Pilih tab "Sketch" (di bagian atas), kemudian pilih "Include Library" -> "TFT_eSPI" -> "User Setup file".
+3. Buka file User_Setup_ST7789.h pada direktori library TFT_eSPI.
+4. Konfigurasi beberapa bagian kode seperti berikut ini:
+   `#define ST7789_2_DRIVER`
+   `#define TFT_SDA_READ`
+   `#define TFT_WIDTH  240` (Disesuaikan dengan lebar layar LCD)
+   `#define TFT_HEIGHT 320` (Disesuaikan dengan tinggi layar LCD)
+   `#define TFT_MOSI 23`
+   `#define TFT_SCLK 18`
+   `#define TFT_CS 15`
+   `#define TFT_DC 2`
+   `#define TFT_RST 4`
+   `#define LOAD_GLCD`
+   `#define LOAD_FONT2`
+   `#define LOAD_FONT4`
+   `#define LOAD_FONT6`
+   `#define LOAD_FONT7`
+   `#define LOAD_FONT8`
+   `#define LOAD_GFXFF`
+   `#define SMOOTH_FONT`
+   `#define SPI_FREQUENCY  27000000`
+   `#define SPI_READ_FREQUENCY  20000000`
+   `#define SPI_TOUCH_FREQUENCY  2500000`
+5. Simpan konfigurasi tersebut.
+6. Buka file User_Setup_Select.h pada direktori library TFT_eSPI.
+7. Konfigurasi bagian kode seperti berikut ini:
+   `#include <User_Setups/User_Setup_ST7789.h>`, selain kode tersebut, biarkan tetap konfigurasi default.
+   
+### Langkah 8: Salin Kode
 Salin kode dari file [src/main.ino](https://github.com/FOSTI-UMS/esp32-doorlock/blob/main/src/main.ino) dan pastekan ke dalam Arduino IDE.
 
-### Langkah 8: Memilih Board dan Port
+### Langkah 9: Memilih Board dan Port
 Pilih board dan port yang sesuai dengan ESP32 Anda pada Arduino IDE. Lihat gambar ![](https://github.com/FOSTI-UMS/esp32-doorlock/blob/main/assets/install/port.png).
 
-### Langkah 9: Kompilasi dan Unggah
+### Langkah 10: Kompilasi dan Unggah
 Klik tombol kompilasi (ikon ceklis) untuk memastikan tidak ada kesalahan dalam kode. Setelah itu, klik tombol unggah (ikon panah menghadap ke kanan) untuk mengunggah program ke ESP32. Tunggu hingga proses kompilasi selesai. Lihat gambar ![](https://github.com/FOSTI-UMS/esp32-doorlock/blob/main/assets/install/compile.png), ![](https://github.com/FOSTI-UMS/esp32-doorlock/blob/main/assets/install/waiting.png).
 
 ### Catatan Penting:
